@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ meta_title }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.typekit.net/jfb4wms.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset "dist/main.css" }}">
+
+    {{ ghost_head }}
+  </head>
+  <body class="bg-white antialiased leading-normal">
+    <div class="container mx-auto p-4">
+      {{{ body }}}
+    </div>
+
+    <script src="{{ asset "dist/main.bundle.js" }}"></script>
+    {{ ghost_foot }}
+  </body>
+</html>

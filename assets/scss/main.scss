@@ -1,0 +1,29 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #e6e8ff;
+}
+
+body {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 16px;
+  color: #5f6771;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #394047;
+  font-family: "ltc-bodoni-175", Georgia, 'Times New Roman', Times, serif;
+}
