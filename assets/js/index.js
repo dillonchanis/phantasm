@@ -1,4 +1,5 @@
 import AOS from 'aos'
+import hljs from 'highlight.js'
 import '../scss/main.scss'
 
 AOS.init({
@@ -7,3 +8,5 @@ AOS.init({
   duration: 1000,
   easing: 'ease-out-quad'
 })
+
+hljs.initHighlightingOnLoad()

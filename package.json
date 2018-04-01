@@ -41,7 +41,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "aos": "2.2.0"
+    "aos": "2.2.0",
+    "highlight.js": "9.12.0"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
