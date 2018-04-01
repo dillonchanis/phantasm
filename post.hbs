@@ -1,0 +1,64 @@
+{{!< default}}
+{{#post}}
+<article class="article leading-loose">
+  <header class="article__header mb-8 text-center">
+    <div class="mb-8">
+      <h1 class="font-thin text-6xl md:text-6xl sm:text-4xl mb-2 leading-tight">
+        {{title}}
+      </h1>
+    </div>
+
+    <hr class="w-8 border border-t-2 border-indigo my-8">
+
+    <div class="mb-8">
+      <p class="text-grey-dark italic">
+        published <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D YYYY"}}</time> in
+        {{#primary_tag}}
+          <span><a class="text-indigo no-underline hover:text-indigo-dark"href="{{url}}">{{name}}</a></span>
+        {{/primary_tag}}
+      </p>
+    </div>
+  </header>
+
+  <div class="article__body">
+    {{content}}
+
+    <a href="/blog" class="text-indigo no-underline hover:text-indigo-dark">Back To Blog</a>
+  </div>
+</article>
+
+<hr class="w-8 border border-t-2 border-indigo my-8">
+
+<footer class="flex justify-between mb-8">
+  {{#prev_post}}
+  <a class="no-underline" href="{{url}}">
+    <article class="bg-white flex flex-1 mr-4 p-4 leading-normal">
+      <div class="mb-8">
+        {{#primary_tag}}
+        <p class="text-sm text-grey-dark">
+          {{name}}
+        </p>
+        {{/primary_tag}}
+        <div class="text-black font-bold text-lg mb-2">{{title}}</div>
+        <p class="text-grey-darker text-sm">{{excerpt words="33"}}</p>
+      </div>
+    </article>
+  </a>
+  {{/prev_post}}
+
+  {{#next_post}}
+  <a class="no-underline" href="{{url}}">
+    <article class="bg-white flex flex-1 p-4 leading-normal">
+      <div class="mb-8">
+        {{#primary_tag}}
+        <p class="text-sm text-grey-dark">
+          {{name}}
+        </p>
+        {{/primary_tag}}
+        <div class="text-black font-bold text-lg mb-2">{{title}}</div>
+        <p class="text-grey-darker text-sm">{{excerpt words="33"}}</p>
+      </div>
+    </article>
+  </a>
+  {{/next_post}}
+</footer>
