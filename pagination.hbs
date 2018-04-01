@@ -1,0 +1,14 @@
+<nav class="mt-4" role="navigation">
+  {{#if prev}}
+    <a class="inline-block mr-6 text-indigo no-underline hover:text-indigo-darker"
+       href="{{page_url prev}}">
+      Newer Posts
+    </a>
+  {{/if}}
+  {{#if next}}
+    <a class="inline-block text-indigo no-underline hover:text-indigo-darker"
+       href="{{page_url next}}">
+       Previous Posts
+    </a>
+  {{/if}}
+</nav>
