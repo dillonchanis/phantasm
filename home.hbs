@@ -1,80 +1,80 @@
 {{!< default}}
-<div class="md:w-3/4 sm:w-full mx-auto" style="margin-top: 2em;">
-  <header data-aos="fade-up" data-aos-delay="200">
-    <h1 class="font-thin md:text-5xl sm:text-4xl leading-tight">
-      Dillon Chanis
-    </h1>
-  </header>
+<header data-aos="fade-up" data-aos-delay="200">
+  <h1 class="font-thin md:text-5xl sm:text-4xl leading-tight">
+    Dillon Chanis
+  </h1>
+</header>
 
-  <section data-aos="fade-up" data-aos-delay="300" class="md:w-3/4 sm:w-full">
-    <p class="leading-loose">
-      I'm a Software Engineer specializing in Front End Development. Currently employed as a UI/UX Developer.
-    </p>
-    <ul class="list-reset mt-2">
-      <li class="inline-block mr-2">
-        <a class="text-indigo no-underline hover:text-indigo-dark" href="https://github.com/dillonchanis/" target="_blank">
-          GitHub
-        </a>
-      </li>
-      <li class="inline-block mr-2">
-        <a class="text-indigo no-underline hover:text-indigo-dark" href="https://twitter.com/dillonchanis" target="_blank">
-          Twitter
-        </a>
-      </li>
-    </ul>
-  </section>
+<section data-aos="fade-up" data-aos-delay="300" class="md:w-3/4 sm:w-full">
+  <p class="leading-loose">
+    I'm a Software Engineer specializing in Front End Development. Currently employed as a UI/UX Developer.
+  </p>
+  <ul class="list-reset mt-2">
+    <li class="inline-block mr-2">
+      <a class="text-indigo no-underline hover:text-indigo-dark" href="https://github.com/dillonchanis/" target="_blank">
+        GitHub
+      </a>
+    </li>
+    <li class="inline-block mr-2">
+      <a class="text-indigo no-underline hover:text-indigo-dark" href="https://twitter.com/dillonchanis" target="_blank">
+        Twitter
+      </a>
+    </li>
+  </ul>
+</section>
 
-  <section style="margin-top: 2.5em;">
-    <h2 data-aos="fade-up" data-aos-delay="400"
+<section class="mt-8">
+  <h2 data-aos="fade-up" data-aos-delay="400"
+    class="font-thin md:text-2xl sm:text-2xl leading-tight mb-2">
+    Recent Projects
+  </h2>
+
+  <ul class="list-reset">
+    <li data-aos="fade-up" data-aos-delay="450" class="mb-2">
+      <a class="text-indigo no-underline hover:text-indigo-dark" href="https://github.com/dillonchanis/vue-mason" target="_blank">
+        Vue Mason
+      </a>
+      <p class="text-sm">A command line tool for quickly generating and scaffolding Vue files.</p>
+    </li>
+
+    <li data-aos="fade-up" data-aos-delay="450" class="mb-2">
+      <a class="text-indigo no-underline hover:text-indigo-dark" href="https://github.com/dillonchanis/vinyasa" target="_blank">
+        Vinyasa
+      </a>
+      <p class="text-sm">Platform for creating, sharing and connecting fitness sequences with others. <span class="italic">Currently under active development.</span></p>
+    </li>
+
+    <li data-aos="fade-up" data-aos-delay="450" class="mb-2">
+      <a class="text-indigo no-underline hover:text-indigo-dark" href="https://github.com/dillonchanis/vue-cute-modal" target="_blank">
+        Cute Modal
+      </a>
+      <p class="text-sm">A simple and easy to use Modal component for Vue applications.</p>
+    </li>
+  </ul>
+</section>
+
+<section class="mt-8">
+  <a href="/blog" class="text-grey no-underline hover:text-indigo-dark">
+    <h2 data-aos="fade-up" data-aos-delay="500"
       class="font-thin md:text-2xl sm:text-2xl leading-tight mb-2">
-      Recent Projects
+      Recent Writing
     </h2>
+  </a>
 
-    <ul class="list-reset">
-      <li data-aos="fade-up" data-aos-delay="450" class="mb-2">
-        <a class="text-indigo no-underline hover:text-indigo-dark" href="https://github.com/dillonchanis/vue-mason" target="_blank">
-          Vue Mason
-        </a>
-        <p class="text-sm">A command line tool for quickly generating and scaffolding Vue files.</p>
-      </li>
+  <ol class="list-reset">
+    {{#foreach posts limit="3"}}
+    <li data-aos="fade-up" data-aos-delay="550" class="mb-2">
+      <a class="text-indigo no-underline hover:text-indigo-dark" href="{{url}}">
+        {{title}} <svg width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg"><path class="fill-current" d="M9.293 3H0v1h9.293L7.146 6.146l.708.708L11.207 3.5 7.854.146l-.708.708L9.293 3" fill-rule="evenodd"></path></svg>
+      </a>
+    </li>
+    {{/foreach}}
+  </ol>
+</section>
 
-      <li data-aos="fade-up" data-aos-delay="450" class="mb-2">
-        <a class="text-indigo no-underline hover:text-indigo-dark" href="https://github.com/dillonchanis/vinyasa" target="_blank">
-          Vinyasa
-        </a>
-        <p class="text-sm">Platform for creating, sharing and connecting fitness sequences with others. <span class="italic">Currently under active development.</span></p>
-      </li>
-
-      <li data-aos="fade-up" data-aos-delay="450" class="mb-2">
-        <a class="text-indigo no-underline hover:text-indigo-dark" href="https://github.com/dillonchanis/vue-cute-modal" target="_blank">
-          Cute Modal
-        </a>
-        <p class="text-sm">A simple and easy to use Modal component for Vue applications.</p>
-      </li>
-    </ul>
-  </section>
-
-  <section style="margin-top: 2.5em;">
-    <a href="#" class="text-grey no-underline hover:text-indigo-dark">
-      <h2 data-aos="fade-up" data-aos-delay="500"
-        class="font-thin md:text-2xl sm:text-2xl leading-tight mb-2">
-        Recent Writing
-      </h2>
-    </a>
-
-    <ol class="list-reset">
-      <li data-aos="fade-up" data-aos-delay="550" class="mb-2">
-        <a class="text-indigo no-underline hover:text-indigo-dark" href="google.com">
-          Leveraging Render Props in Vue
-        </a>
-      </li>
-    </ol>
-  </section>
-
-  <section style="margin-top: 2.5em;" data-aos="fade-up" data-aos-delay="600">
-    <h2 class="font-thin md:text-2xl sm:text-2xl leading-tight mb-2">Get in Touch</h2>
-    <a class="text-indigo no-underline hover:text-indigo-dark" href="mailto:dillonchanis92@gmail.com">
-      dillonchanis92@gmail.com
-    </a>
-  </section>
-</div>
+<section class="mt-8" data-aos="fade-up" data-aos-delay="600">
+  <h2 class="font-thin md:text-2xl sm:text-2xl leading-tight mb-2">Get in Touch</h2>
+  <a class="text-indigo no-underline hover:text-indigo-dark" href="mailto:dillonchanis92@gmail.com">
+    dillonchanis92@gmail.com
+  </a>
+</section>
