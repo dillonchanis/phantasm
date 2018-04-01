@@ -1,0 +1,23 @@
+{{!< default}}
+<div class="mb-8">
+  <h1 class="font-thin text-6xl md:text-6xl sm:text-4xl mb-2 leading-tight">
+    Blog
+  </h1>
+</div>
+
+{{#get "posts"}}
+<ul class="list-reset">
+  {{#foreach posts}}
+  <li class="mb-4 leading-tight">
+    <span class="flex text-grey-darker text-sm">
+      <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D YYYY"}}</time>
+    </span>
+    <a href="{{url}}" class="text-indigo no-underline hover:text-indigo-darker">
+      {{title}} <svg width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg"><path class="fill-current" d="M9.293 3H0v1h9.293L7.146 6.146l.708.708L11.207 3.5 7.854.146l-.708.708L9.293 3" fill-rule="evenodd"></path></svg>
+    </a>
+  </li>
+  {{/foreach}}
+</ul>
+
+{{pagination}}
+{{/get}}
