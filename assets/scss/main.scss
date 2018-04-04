@@ -1,5 +1,25 @@
 @tailwind preflight;
 @tailwind components;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #394047;
+  font-family: "ltc-bodoni-175", Georgia, 'Times New Roman', Times, serif;
+  @apply .font-thin .text-2xl .leading-tight .mb-2;
+}
+
+a {
+  @apply .text-indigo .no-underline;
+
+  &:hover {
+    @apply .text-indigo-darker;
+  }
+}
+
 @tailwind utilities;
 
 * {
@@ -18,36 +38,28 @@ body {
   color: #5f6771;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #394047;
-  font-family: "ltc-bodoni-175", Georgia, 'Times New Roman', Times, serif;
+code {
+  background-color: #f8f8f8;
+  color: #6574cd;
+  white-space: pre;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 pre {
-  font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
-  word-wrap: normal;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  -webkit-hyphens: none;
-  hyphens: none;
-  font-size: 1em;
-  line-height: 20px;
-  tab-size: 1.5em;
-  margin: 1em 0;
-}
+  background: none;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  font-size: .75rem;
+  position: relative;
+  overflow-y: hidden;
 
-pre code, pre tt {
-  white-space: pre;
-}
-
-code {
-  padding: 1em;
+  code {
+    line-height: 1.75;
+    padding: 1em 1.5em;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
 }
 
 
-@import './dracula.scss';
+@import './dracula';
+@import './article';
